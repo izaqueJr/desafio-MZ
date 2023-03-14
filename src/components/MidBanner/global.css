@@ -1,0 +1,12 @@
+.mid-banner {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.mid-banner__text-container {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

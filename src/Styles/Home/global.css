@@ -1,0 +1,33 @@
+.tipbar__container {
+  display: flex;
+  max-width: 308px;
+  margin: 0 7px;
+}
+
+.tipbar__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 4px;
+  background: #efefef;
+
+  padding: 14px 27px;
+}
+
+.tipbar__text-content {
+  flex: 1;
+  margin-left: 22px;
+}
+.tipbar__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.section__container {
+  padding: 40px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
