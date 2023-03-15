@@ -5,8 +5,50 @@
 }
 
 .mid-banner__text-container {
-  max-width: 420px;
+  width: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.mid-banner__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.mid-banner__image-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+  .mid-banner.section__container {
+    padding: 40px 31px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mid-banner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .newsletter {
+    padding: 0 31px;
+  }
+
+  .section__container.mid-banner {
+    padding: 0 31px 40px 31px;
+  }
+
+  .newsletter__submit {
+    margin-left: 15px !important;
+  }
+
+  .mid-banner__text-container {
+    width: 100%;
+  }
+
+  .footer__container {
+    padding: 0 31px;
+  }
 }

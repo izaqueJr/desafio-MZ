@@ -1,0 +1,47 @@
+.banner-slider__image {
+  width: 100vw;
+}
+
+.banner-slider .slick-next {
+  right: 20px;
+  z-index: 10;
+}
+.banner-slider .slick-prev {
+  z-index: 10;
+  left: 20px;
+}
+
+.arrow-custom::before {
+  display: none;
+}
+
+.slick-dots {
+  bottom: 8px;
+}
+
+.slick-dots > li.slick-active > button::before {
+  color: transparent !important;
+  background: #faa500;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.slick-dots > li > button::before {
+  color: transparent !important;
+  opacity: 1;
+  border: 1px solid #faa500;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-slider .slick-next {
+    right: 6%;
+  }
+  .banner-slider .slick-prev {
+    left: 6%;
+  }
+}

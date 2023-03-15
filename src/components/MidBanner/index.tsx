@@ -9,7 +9,7 @@ export default function MidBanner() {
         <Title type="h4" align="left">
           Lorem ipsum{" "}
         </Title>
-        <p>
+        <p className="mid-banner__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum
           mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum.
           Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer.
@@ -22,8 +22,11 @@ export default function MidBanner() {
         </p>
       </div>
 
-      <a href="#">
+      <a href="#" className="mid-banner__image-container desktop">
         <img src="/images/banner-02.png" alt="Coleção outono-inverno" />
+      </a>
+      <a href="#" className="mid-banner__image-container mobile">
+        <img src="/images/banner-02-mobile.png" alt="Coleção outono-inverno" />
       </a>
     </section>
   );

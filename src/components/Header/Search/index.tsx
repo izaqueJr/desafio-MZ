@@ -1,6 +1,4 @@
-import React from "react";
 import "./global.css";
-
 export default function Search() {
   return (
     <form action="" className="search">

@@ -65,3 +65,21 @@ figure img {
   padding: 0 0.9375rem;
   max-width: 73.125rem;
 }
+
+.desktop {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

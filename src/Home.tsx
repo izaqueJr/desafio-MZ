@@ -11,17 +11,39 @@ import { products, partnerBrands, tipBar } from "./components/Api";
 
 import "./Styles/Home/global.css";
 import BannerSlider from "./components/BannerSlider";
+import Modal from "./components/Modal/index";
 
 function Home() {
   return (
     <>
       <Header />
       <main>
+        <Modal />
         <BannerSlider
+          device="desktop"
           items={[
             {
               image: "/images/fullbanner.png",
-              url: "https://www.google.com.br",
+              url: "/",
+            },
+            {
+              image: "/images/fullbanner.png",
+              url: "/",
+            },
+          ]}
+        />
+        <BannerSlider
+          device="mobile"
+          items={[
+            {
+              device: "mobile",
+              image: "/images/fullbanner-mobile.png",
+              url: "/",
+            },
+            {
+              device: "mobile",
+              image: "/images/fullbanner-mobile.png",
+              url: "/",
             },
           ]}
         />

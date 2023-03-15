@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { settings } from "../Slider/settings";
 
 interface CardSliderProps {
   children: React.ReactNode;
@@ -8,13 +9,6 @@ interface CardSliderProps {
 
 const CardSlider = (props: CardSliderProps) => {
   const { children } = props;
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-  };
 
   return (
     <section className="cards-row">

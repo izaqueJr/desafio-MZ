@@ -1,0 +1,134 @@
+.dialog__overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 298px;
+  max-width: 450px;
+
+  padding: 25px;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog__close-container {
+  all: unset;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.dialog__close-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.dialog__form {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px 24px;
+}
+
+.dialog__send-button {
+  background: #faa500;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.dialog__title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #464b54;
+  text-transform: uppercase;
+  margin: 13px 0;
+}
+.dialog__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #787d83;
+  text-align: center;
+}
+
+.dialog__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #787d83;
+  text-align: center;
+
+  margin-bottom: 26px;
+}
+.dialog__description span {
+  font-weight: 700;
+}
+.dialog__button-container,
+.dialog__input-container {
+  display: flex;
+  width: 100%;
+}
+
+.dialog__email {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  width: 100%;
+
+  color: #787d83;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-bottom: 12px;
+}
+
+.dialog__send-button span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
