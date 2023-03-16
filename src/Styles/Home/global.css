@@ -32,8 +32,8 @@
   margin: 0 auto;
 }
 
-/* @media screen and (max-width: 1024px) {
-  .tipbar {
-    padding-left: 31px;
+@media screen and (max-width: 1024px) {
+  .tipbar__container {
+    margin: 0 auto !important;
   }
-} */
+}

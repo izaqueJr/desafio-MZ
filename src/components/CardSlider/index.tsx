@@ -10,9 +10,13 @@ interface CardSliderProps {
 const CardSlider = (props: CardSliderProps) => {
   const { children } = props;
 
+  const config = {
+    ...settings,
+  };
+
   return (
     <section className="cards-row">
-      <Slider {...settings}>{children}</Slider>
+      <Slider {...config}>{children}</Slider>
     </section>
   );
 };
