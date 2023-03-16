@@ -6,12 +6,14 @@
 }
 
 .dialog__section {
+  padding: 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .dialog__content {
+  z-index: 99999;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -25,6 +27,7 @@
 }
 
 .dialog__close-container {
+  max-width: 484px;
   all: unset;
   display: flex;
   justify-content: flex-end;
@@ -32,6 +35,7 @@
 }
 
 .dialog__close-button {
+  padding: 0 10px;
   background-color: transparent;
   border: none;
   color: #fff;
@@ -147,5 +151,9 @@
 
   .dialog__description {
     font-size: 20px;
+  }
+
+  .dialog__close-container {
+    max-width: 100% !important;
   }
 }
